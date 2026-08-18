@@ -1,0 +1,143 @@
+/* Main App */
+
+.app {
+  width: 90%;
+  max-width: 950px;
+
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+/* Header */
+
+.app-header {
+  margin-bottom: 45px;
+
+  text-align: center;
+}
+
+.header-content h1 {
+  margin: 0 0 10px;
+
+  font-size: 2.7rem;
+  font-weight: 700;
+
+  color: #222;
+}
+
+.header-content p {
+  margin: 0;
+
+  color: #6b7280;
+  font-size: 1rem;
+}
+
+/* Contact section */
+
+.contact-section {
+  width: 100%;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 22px;
+}
+
+.section-header h2 {
+  margin: 0 0 4px;
+
+  font-size: 1.5rem;
+  color: #222;
+}
+
+.contact-count {
+  margin: 0;
+
+  color: #777;
+  font-size: 0.85rem;
+}
+
+
+/* Contact list */
+
+.contact-list {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 20px;
+}
+
+/* Emp favs */
+
+.empty-message {
+  padding: 40px 20px;
+
+  border: 1px dashed #cfd3d8;
+  border-radius: 12px;
+
+  text-align: center;
+
+  background-color: #ffffff;
+}
+
+.empty-message p {
+  margin: 0 0 8px;
+
+  font-weight: 600;
+}
+
+.empty-message span {
+  color: #777;
+  font-size: 0.9rem;
+}
+
+/* Footer */
+
+.app-footer {
+  margin-top: 50px;
+
+  text-align: center;
+
+  color: #888;
+  font-size: 0.8rem;
+}
+
+
+
+@media (max-width: 750px) {
+  .contact-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+@media (max-width: 500px) {
+  .app {
+    width: 92%;
+    padding: 30px 0;
+  }
+
+  .app-header {
+    margin-bottom: 35px;
+  }
+
+  .header-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .section-header {
+    align-items: flex-start;
+    flex-direction: column;
+
+    gap: 15px;
+  }
+
+  .favorite-filter {
+    width: 100%;
+  }
+}
