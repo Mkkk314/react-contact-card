@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import Contact from './Contact'
+import Contact from './contact'
 import contactsData from './contacts'
 
 function App() {
